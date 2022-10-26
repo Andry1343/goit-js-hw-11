@@ -58,7 +58,7 @@ align-items: center;
 height: 80px;
 
 box-shadow: 0 3px 9px -6px #232324;
-background-color: #a6cfaa;
+background-color: #d2d5e4;
 }
 .search-form input {
     position: relative;
@@ -70,7 +70,7 @@ background-color: #a6cfaa;
     
     border-radius: 10px;
     box-shadow: 0 0 15px #232324;
-    /* border: 1 solid #232324; */
+    border: 1 solid #232324;
 }
 .search-form input:hover,
 .search-form input:focus {
@@ -79,16 +79,16 @@ background-color: #a6cfaa;
 }
 .search-form button {
     height: 50px;
-    
     font-size: 18px;
     padding: 0 10px;
     
     background-color: white;
-    box-shadow: 0 0 15px #232324;
     border-radius: 10px;
-    border: 1 solid #a6cfaa;
 
     transition: transform cubic-bezier(0.215, 0.610, 0.355, 1) 500ms;
+
+    box-shadow: 0 0 15px #232324;
+    border: 1 solid #232324;
 }
 .search-form button:hover, 
 .search-form button:focus {
