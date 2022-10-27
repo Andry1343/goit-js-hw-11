@@ -9,7 +9,7 @@ import {refs} from './refs'
 
 const ERROR_MESSAGE = 'Sorry, there are no images matching your search query. Please try again.';
 const INFO_MESSAGE = "We're sorry, but you've reached the end of search results.";
-
+let simplelightbox = new SimpleLightbox('.gallery a');
 Scrollbar.init(document.querySelector('#my-scrollbar'));
 
 refs.searchForm.addEventListener('submit', createGallery);
@@ -54,7 +54,7 @@ async function loadingImages() {
 async function renderCards(images) {
   let newCard = await markup(images);
   refs.gallery.insertAdjacentHTML('beforeend', newCard);
-  let simplelightbox = new SimpleLightbox('.gallery a');
+  /* let simplelightbox = new SimpleLightbox('.gallery a'); */
   simplelightbox.refresh();
 }
 
